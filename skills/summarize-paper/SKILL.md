@@ -1,11 +1,3 @@
----
-name: summarize-paper
-description: Analyze scientific papers (from local files or URLs) and generate comprehensive, structured summaries ready for the knowledge vault.
-argument-hint: "<file-path-or-url>"
-allowed-tools: Read, Write, Bash, Glob, WebFetch, WebSearch
-model: haiku
----
-
 # summarize-paper
 
 Analyze scientific papers (from local files or URLs) and generate comprehensive, structured summaries ready for the knowledge vault.
