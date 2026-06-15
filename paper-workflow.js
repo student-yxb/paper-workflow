@@ -3,7 +3,7 @@ export const meta = {
   description: '模块化论文写作全流程：从规划到投稿，8阶段可独立调用。组合 nature-skills + academic-paper + Zotero MCP + Omniscale',
   phases: [
     { title: 'Stage 1: 规划与研究地图', detail: 'academic-paper (plan) + Omniscale research-map' },
-    { title: 'Stage 2: 文献调研', detail: 'nature-academic-search + academic-paper (lit-review) + summarize-paper' },
+    { title: 'Stage 2: 文献调研', detail: 'nature-academic-search + deep-research + summarize-paper' },
     { title: 'Stage 3: 写作初稿', detail: 'nature-writing + academic-paper (outline-only) + nature-polishing + academic-paper (abstract-only)' },
     { title: 'Stage 4: 引文与数据', detail: 'nature-citation + academic-paper (citation-check) + Zotero import (VERIFIED only) + nature-data' },
     { title: 'Stage 5: 图表制作', detail: 'nature-figure (Python/R)' },
@@ -122,6 +122,7 @@ const STAGES = {
 提示：
 - 可以先用 zotero_semantic_search 快速定位相关文献
 - 用 nature-academic-search skill 进行多库系统检索
+- 用 deep-research skill 进行系统性文献综述和深度分析
 - 用 summarize-paper skill 逐篇提取关键信息`,
         phase: 'Stage 2: 文献调研',
       },

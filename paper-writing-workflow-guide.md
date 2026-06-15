@@ -25,7 +25,7 @@
 | 阶段 | 名称 | 预计耗时 | 核心 Skill | Zotero |
 |------|------|---------|-----------|--------|
 | [1](#stage-1-规划与研究地图) | 规划与研究地图 | 30 min | academic-paper (plan) + research-map | — |
-| [2](#stage-2-文献调研) | 文献调研 | 1-3 h | nature-academic-search + academic-paper (lit-review) + summarize-paper | 可选手动导入 |
+| [2](#stage-2-文献调研) | 文献调研 | 1-3 h | nature-academic-search + deep-research + summarize-paper | 可选手动导入 |
 | [3](#stage-3-写作初稿) | 写作初稿 | 2-6 h | nature-writing + nature-polishing + academic-paper (outline-only) + academic-paper (abstract-only) | — |
 | [4](#stage-4-引文与数据) | 引文与数据 | 1-2 h | nature-citation + academic-paper (citation-check) + **zotero-import** + nature-data | ✅ **仅导入 VERIFIED** |
 | [5](#stage-5-图表制作) | 图表制作 | 1-4 h | nature-figure (Python/R) | — |
@@ -133,7 +133,7 @@ zotero_search_items → "关键词"
 ```
 Skill: academic-paper
 ```
-直接说："做 [主题] 的系统性文献综述"（自动进入 lit-review mode）
+直接说："做 [主题] 的深度研究"（调用 deep-research skill）
 
 **步骤 2.3 — 单篇精读**
 ```

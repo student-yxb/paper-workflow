@@ -67,7 +67,7 @@ claude mcp add zotero https://github.com/54yyyu/zotero-mcp
 | Stage | Name | Key Skills | Zotero |
 |-------|------|-----------|--------|
 | 1 | Planning & Research Map | academic-paper (plan), research-map | — |
-| 2 | Literature Survey | nature-academic-search, academic-paper (lit-review), summarize-paper | Optional: manual import |
+| 2 | Literature Survey | nature-academic-search, deep-research, summarize-paper | Optional: manual import |
 | 3 | Writing First Draft | nature-writing, academic-paper (outline-only), nature-polishing, academic-paper (abstract-only) | — |
 | 4 | Citations & Data | nature-citation, academic-paper (citation-check), nature-data, **zotero-import** | ✅ **Core**: import only VERIFIED citations |
 | 5 | Figures & Charts | nature-figure (Python/R) | — |
