@@ -1,0 +1,51 @@
+{
+  "name": "paper-writing-workflow",
+  "version": "2.1.0",
+  "description": "模块化 8 阶段学术论文写作全流程工作流 — 从选题到投稿。整合 nature-skills + ARS + Omniscale 三件套（已内置） + Zotero MCP，支持单阶段独立调用或全流程自动化。包含详细使用手册。",
+  "author": {
+    "name": "yxb",
+    "url": "https://github.com/student-yxb"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/student-yxb/paper-workflow",
+  "repository": "https://github.com/student-yxb/paper-workflow",
+  "keywords": [
+    "academic",
+    "paper-writing",
+    "workflow",
+    "nature",
+    "research",
+    "writing",
+    "review",
+    "publication",
+    "literature-review",
+    "scientific-writing",
+    "zotero",
+    "citation",
+    "critique",
+    "summarize-paper",
+    "research-map",
+    "omniscale"
+  ],
+  "category": "academic",
+  "claudeCode": {
+    "minVersion": "1.0.0"
+  },
+  "bundledSkills": [
+    {
+      "name": "critique",
+      "path": "skills/critique/SKILL.md",
+      "description": "Formalist Devil's Advocate — find logical flaws, data leakage, circular reasoning, and fallacies"
+    },
+    {
+      "name": "summarize-paper",
+      "path": "skills/summarize-paper/SKILL.md",
+      "description": "Analyze scientific papers and generate comprehensive structured summaries"
+    },
+    {
+      "name": "research-map",
+      "path": "skills/research-map/SKILL.md",
+      "description": "Generate or update a structured research map for a project"
+    }
+  ]
+}

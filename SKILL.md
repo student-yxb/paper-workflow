@@ -6,8 +6,8 @@ description: >
   Supports single-stage invocation or full pipeline automation.
   Trigger when user asks about paper writing workflow, 论文写作流程,
   academic writing pipeline, or wants to start/continue a structured paper project.
-version: 2.0.0
-author: xyy
+version: 2.1.0
+author: yxb
 license: MIT
 tags:
   - academic
@@ -40,20 +40,25 @@ the best capabilities of installed Claude Code skills:
 | **nature-skills** | Claude Code Skill | [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) | Stages 2–8：润色、写作、引文、图表、审稿、回复 |
 | **academic-research-skills (ARS)** | Claude Code Skill | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | Stages 1–4, 7–8：规划、文献综述、写作、引文验证、格式转换、披露声明 |
 | **Zotero MCP** | MCP Server | [54yyyu/zotero-mcp](https://github.com/54yyyu/zotero-mcp) | Stage 4：文献验证后导入 Zotero（核心依赖） |
-| **summarize-paper** | Claude Code Skill | (内置) | Stage 2：单篇论文精读提取 |
-| **critique** | Claude Code Skill | (内置) | Stage 6：逻辑漏洞检测 |
-| **research-map** | Claude Code Skill | (内置) | Stage 1：研究全景图 |
+| **summarize-paper** | Claude Code Skill | ✅ 已内置（`skills/summarize-paper/`） | Stage 2：单篇论文精读提取 |
+| **critique** | Claude Code Skill | ✅ 已内置（`skills/critique/`） | Stage 6：逻辑漏洞检测 |
+| **research-map** | Claude Code Skill | ✅ 已内置（`skills/research-map/`） | Stage 1：研究全景图 |
+
+> **Omniscale 三件套已内置**：`critique`、`summarize-paper`、`research-map` 三个辅助 skill 已打包在本仓库的 `skills/` 目录下，安装 paper-workflow 后自动可用，无需额外安装。
 
 ### 安装命令
 
 ```bash
-# 1. 安装 nature-skills
+# 1. 安装本 Skill（含内置 Omniscale 三件套：critique + summarize-paper + research-map）
+git clone https://github.com/student-yxb/paper-workflow.git ~/.claude/skills/paper-workflow
+
+# 2. 安装 nature-skills
 claude mcp add nature-skills https://github.com/Yuan1z0825/nature-skills
 
-# 2. 安装 academic-research-skills (含 academic-paper + academic-paper-reviewer + deep-research 等)
+# 3. 安装 academic-research-skills (含 academic-paper + academic-paper-reviewer + deep-research 等)
 claude mcp add ars https://github.com/Imbad0202/academic-research-skills
 
-# 3. 安装 Zotero MCP（需先在本地启动 Zotero 客户端）
+# 4. 安装 Zotero MCP（需先在本地启动 Zotero 客户端）
 claude mcp add zotero https://github.com/54yyyu/zotero-mcp
 ```
 
